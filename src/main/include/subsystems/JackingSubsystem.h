@@ -6,6 +6,7 @@
 
 #include <frc2/command/SubsystemBase.h>
 #include <frc/DoubleSolenoid.h>
+#include "Constants.h"
 
 class JackingSubsystem : public frc2::SubsystemBase {
  public:
