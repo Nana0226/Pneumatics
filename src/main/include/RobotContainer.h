@@ -6,8 +6,16 @@
 
 #include <frc2/command/Command.h>
 
+#include <frc/Joystick.h>
+
 #include "commands/ExampleCommand.h"
 #include "subsystems/ExampleSubsystem.h"
+
+#include "subsystems/JackingSubsystem.h"
+
+#include "commands/LowerRobot.h"
+#include "commands/RaiseRobot.h"
+
 
 /**
  * This class is where the bulk of the robot should be declared.  Since
@@ -26,6 +34,9 @@ class RobotContainer {
   // The robot's subsystems and commands are defined here...
   ExampleSubsystem m_subsystem;
   ExampleCommand m_autonomousCommand;
+  JackingSubsystem m_jackingSubsystem;
+
+  frc::Joystick m_driverController{0};
 
   void ConfigureButtonBindings();
 };
